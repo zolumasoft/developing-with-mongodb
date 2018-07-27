@@ -1,0 +1,9 @@
+version: '3'
+services:
+  db:
+    image: mongo:3.6
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./data:/data/db
+    env_file: .dbenv
